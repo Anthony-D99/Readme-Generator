@@ -45,40 +45,41 @@ inquirer.prompt([
      message:'Insert preffered email address for user to have access to contact you.',
     }
  ]).then(result=>{
-    const readme =`# ${title} ${badge}
+    const readme =`# ${result.title} 
 
-
-    ## Description
-    ${description}
+# Description
+${result.description}
     
-    ## Table of Contents
-    ${tableOfContents}
-    ## Installation
-    ${installation}
-    ## Usage
-    ${usage}
+# Table of Contents
+${result.tableOfContents}
 
-    ## License 
-    ${license}
+# Installation
+${result.installation}
 
-    ## Contributing
-    ${constributions}
+# Usage
+${result.usage}
 
-    ## Tests
-    ${test}
+# License 
+${result.license}
 
-    ## Questions
-    GitHub Username/Link to profile:  ![GitHub Username](${gitHubQuestions})
-    Contact Info:  ![Email](${emailQuestion})`
-//     fs.writeFile('index.md',readme,error =>{
-//         if(error){
-//             console.log(error)
-//          }else{
-//             console.log('responses saved successfully')
-//          }
-//     })
+# Contributing
+${result.constributions}
 
-//  })
+# Tests
+${result.test}
+
+# Questions
+GitHub Username/Link to profile:  ![GitHub Username](${result.gitHubQuestions})
+Contact Info:  ![Email](${result.emailQuestions})`
+    fs.writeFile('readme.md',readme,error =>{
+        if(error){
+            console.log(error)
+         }else{
+            console.log('responses saved successfully')
+         }
+    })
+
+ })
 const questions = [];
 
 // TODO: Create a function to write README file
