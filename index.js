@@ -1,6 +1,6 @@
 const inquirer = require('inquirer')
 const fs=require('fs')
-
+let badge
 
 inquirer.prompt([
     { type:'input',
@@ -11,10 +11,6 @@ inquirer.prompt([
      name:'description',
      message:"Provide a short description explaining the what, why, and how of your project.",
      }, 
-     { type:'input',
-     name:'tableOfContents',
-     message:'Add a table of contents to make it easy for users to find what they need.',
-     },
      {type:'input',
      name:'installation',
      message:'What are the steps required to install your project?',
@@ -26,8 +22,8 @@ inquirer.prompt([
     {type:'list',
      name:'license',
      message:'Select license if used, if not used selected last option.',
-     choices:['Apache 2.0','GNU','MIT'],
-     validate:
+     choices:['Apache(https://opensource.org/licenses/Apache-2.0)','GNU','MIT'],
+     
     },
     {type:'input',
      name:'contributions',
@@ -46,31 +42,51 @@ inquirer.prompt([
      message:'Insert preffered email address for user to have access to contact you.',
     }
  ]).then(result=>{
+      if(result.license === 'Apache(https://opensource.org/licenses/Apache-2.0)'){
+          badge= "![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)"
+      }
+
+   
     const readme =`# ${result.title} 
+    ${badge}
+#Table of Contents
 
-# Description
-${result.description}
-    
-# Table of Contents
-${result.tableOfContents}
+[Description](#description)\n
+[Installation](#installation)\n
+[Usage](#usage)\n
+[License](#license)\n
+[Contributing](#contributing)\n
+[Test](#test)\n
+[Questions](#questions)\n
 
-# Installation
-${result.installation}
 
-# Usage
-${result.usage}
+#Description
 
-# License 
-${result.license}
+${result.description}\n
 
-# Contributing
-${result.constributions}
+#Installation
 
-# Tests
-${result.test}
+${result.installation}\n
 
-# Questions
-GitHub Username/Link to profile:  ${result.gitHubQuestions} 
+#Usage
+
+${result.usage}\n
+
+#License 
+
+${result.license}\n
+
+#Contributing
+
+${result.constributions}\n
+
+#Tests
+
+${result.test}\n
+
+#Questions
+
+GitHub Username/Link to profile:  ${result.gitHubQuestions}\n 
 
 Contact Info: ${result.emailQuestions}\n` 
     fs.writeFile('README.md',readme,error =>{
