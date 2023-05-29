@@ -1,7 +1,7 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer')
 const fs=require('fs')
-// TODO: Create an array of questions for user input
+
+
 inquirer.prompt([
     { type:'input',
      name:'title',
@@ -26,7 +26,8 @@ inquirer.prompt([
     {type:'list',
      name:'license',
      message:'Select license if used, if not used selected last option.',
-     choices:['','Email','Text'],
+     choices:['Apache 2.0','GNU','MIT'],
+     validate:
     },
     {type:'input',
      name:'contributions',
@@ -69,9 +70,10 @@ ${result.constributions}
 ${result.test}
 
 # Questions
-GitHub Username/Link to profile:  ![GitHub Username](${result.gitHubQuestions})
-Contact Info:  ![Email](${result.emailQuestions})`
-    fs.writeFile('readme.md',readme,error =>{
+GitHub Username/Link to profile:  ${result.gitHubQuestions} 
+
+Contact Info: ${result.emailQuestions}\n` 
+    fs.writeFile('README.md',readme,error =>{
         if(error){
             console.log(error)
          }else{
