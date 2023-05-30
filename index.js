@@ -30,7 +30,7 @@ inquirer.prompt([
       choices: ['Apache(https://opensource.org/licenses/Apache-2.0)', 'Boost(https://www.boost.org/LICENSE_1_0.txt)', 'GNU(https://www.gnu.org/licenses/gpl-3.0)', 'MIT(https://opensource.org/licenses/MIT)', 'IBM(https://opensource.org/licenses/IPL-1.0)', 'ISC(https://opensource.org/licenses/ISC)'],
 
    },
-   {
+   { 
       type: 'input',
       name: 'contributions',
       message: 'If you would like other developers to contribute to this project, you can include guidelines for how to do so.',
@@ -97,7 +97,7 @@ ${result.license}\n
 
 #Contributing
 
-${result.constributions}\n
+${result.contributions}\n
 
 #Tests
 
@@ -117,5 +117,4 @@ Contact Info: ${result.emailQuestions}\n`
    })
 
 })
-
 
