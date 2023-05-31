@@ -68,42 +68,42 @@ inquirer.prompt([
    const readme = `# ${result.title} ${badge}
 
 
-#Table of Contents
+## Table of Contents
 
-[Description](https://github.com/Anthony-D99/Readme-Generator#description)\n
-[Installation](https://github.com/Anthony-D99/Readme-Generator#installation)\n
-[Usage](https://github.com/Anthony-D99/Readme-Generator#usage)\n
-[License](https://github.com/Anthony-D99/Readme-Generator#license)\n
-[Contributing](https://github.com/Anthony-D99/Readme-Generator#contributing)\n
-[Test](https://github.com/Anthony-D99/Readme-Generator#test)\n
-[Questions](https://github.com/Anthony-D99/Readme-Generator#questions)\n
+[Description](#description)\n
+[Installation](#installation)\n
+[Usage](#usage)\n
+[License](#license)\n
+[Contributing](#contributing)\n
+[Test](#test)\n
+[Questions](#questions)\n
 
 
-#Description
+## Description
 
 ${result.description}\n
 
-#Installation
+## Installation
 
 ${result.installation}\n
 
-#Usage
+## Usage
 
 ${result.usage}\n
 
-#License 
+## License 
 
 ${result.license}\n
 
-#Contributing
+## Contributing
 
 ${result.contributions}\n
 
-#Tests
+## Tests
 
 ${result.test}\n
 
-#Questions
+## Questions
 
 GitHub Username/Link to profile:  ${result.gitHubQuestions}\n 
 

@@ -1,57 +1,57 @@
-# Readme Generator ![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)
+# Readme Generator ![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)
 
 
-#Table of Contents
+## Table of Contents
 
-[Description](https://github.com/Anthony-D99/Readme-Generator#description)
+[Description](#description)
 
-[Installation](https://github.com/Anthony-D99/Readme-Generator#installation)
+[Installation](#installation)
 
-[Usage](https://github.com/Anthony-D99/Readme-Generator#usage)
+[Usage](#usage)
 
-[License](https://github.com/Anthony-D99/Readme-Generator#license)
+[License](#license)
 
-[Contributing](https://github.com/Anthony-D99/Readme-Generator#contributing)
+[Contributing](#contributing)
 
-[Test](https://github.com/Anthony-D99/Readme-Generator#test)
+[Test](#test)
 
-[Questions](https://github.com/Anthony-D99/Readme-Generator#questions)
+[Questions](#questions)
 
 
 
-#Description
+## Description
 
 This project can be used as a tool for user to quickly and efficiantly create a readme file for their respected project.
 
 
-#Installation
+## Installation
 
 To install this project you must clone the repository then open the file in the terminal and run it by typing and entering 'node index.js'
 
 
-#Usage
+## Usage
 
 This application can be used by anyone and everyone to create proper readme files. In order to do so the user must first open the 'Readme-Generator' file in the terminal and run 'node index.js'. The user will then be presented with nine questions that will help fill out each section of their readme. After answering each question to the users best ability the readme.md file will be automatically generated and ready to use for their project.
 
 
-#License 
+## License 
 
-Boost(https://www.boost.org/LICENSE_1_0.txt)
+IBM(https://opensource.org/licenses/IPL-1.0)
 
 
-#Contributing
+## Contributing
 
 Contributions can be made to these files at any time to help create the best readme generator possible. Users can clone these files and make changes to fit their own acceptance criteria.
 
 
-#Tests
+## Tests
 
 NA
 
 
-#Questions
+## Questions
 
-GitHub Username/Link to profile:  Anthony-D99 https://github.com/anthony-d99
+GitHub Username/Link to profile:  Anthony-D99 https://github.com/Anthony-D99/Readme-Generator
  
 
 Contact Info: anthonydisaf@yahoo.com
